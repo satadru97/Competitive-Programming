@@ -1,0 +1,53 @@
+/*
+    https://www.codechef.com/AUG17/problems/RAINBOWA
+    https://www.codechef.com/viewsolution/14823737
+*/
+
+#include<stdio.h>
+int main(void)
+{
+	int t,n,a[100],i,f;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    f=1;
+	    scanf("%d",&n);
+	    if(n<7||n>100)
+	        f=0;
+	    for(i=0;i<n;i++)
+	    {
+	        scanf("%d",&a[i]);
+	        if(a[i]>7)
+	            f=0;
+	    }
+	    if(a[0]!=1||a[n/2]!=7)
+	    {
+	        f=0;
+	    }
+	    for(i=0;i<n/2;i++)
+	    {
+	        if(!(a[i+1]==a[i]||a[i+1]==a[i]+1))
+	        {
+	            f=0;
+	            break;
+	        }
+	    }
+	    for(i=0;i<=n/2;i++)
+	    {
+	        if(a[i]!=a[n-i-1])
+	        {
+	            f=0;
+	            break;
+	        }
+	    }
+	    if(f==0)
+	    {
+	        printf("no\n");
+	    }
+	    else
+	    {
+	        printf("yes\n");
+	    }
+	}
+	return 0;
+}  
