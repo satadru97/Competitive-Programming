@@ -1,4 +1,7 @@
-/*    https://www.codechef.com/COOK94B/problems/CHEFRUN   */
+/*    
+        https://www.codechef.com/COOK94B/problems/CHEFRUN  
+        https://www.codechef.com/viewsolution/18611636
+*/
 
 #include<stdio.h>
 int main()
