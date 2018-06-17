@@ -1,4 +1,8 @@
-/*        https://www.codechef.com/JUNE18B/problems/NAICHEF/          */
+/*        
+        https://www.codechef.com/JUNE18B/problems/NAICHEF/   
+        https://www.codechef.com/viewsolution/18832724
+        
+*/
 
 #include<stdio.h>
 int main()
