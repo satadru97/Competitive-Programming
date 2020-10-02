@@ -6,6 +6,7 @@
 #include<stdio.h>
 int main()
 {
+    //GOODSET Solution
     int t,k,i,n;
     scanf("%d",&t);
     for(k=0;k<t;k++)
